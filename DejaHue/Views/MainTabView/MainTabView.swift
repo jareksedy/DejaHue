@@ -11,18 +11,26 @@ struct MainTabView: View {
     @State private var selection = 0
     
     init() {
-        UINavigationBar.appearance().titleTextAttributes =
-        [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .bold).rounded(),
-         NSAttributedString.Key.foregroundColor: UIColor.systemIndigo]
+        UINavigationBar
+            .appearance()
+            .titleTextAttributes = [
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .bold).rounded(),
+                NSAttributedString.Key.foregroundColor: UIColor.accent
+            ]
         
-        UINavigationBar.appearance().largeTitleTextAttributes =
-        [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 36, weight: .bold).rounded(),
-         NSAttributedString.Key.foregroundColor: UIColor.systemIndigo]
+        UINavigationBar
+            .appearance()
+            .largeTitleTextAttributes = [
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 36, weight: .bold).rounded(),
+                NSAttributedString.Key.foregroundColor: UIColor.accent
+            ]
         
         UITabBarItem
             .appearance()
-            .setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: .bold).rounded()],
-                                    for: .normal)
+            .setTitleTextAttributes(
+                [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: .bold).rounded()],
+                for: .normal
+            )
     }
     
     var body: some View {

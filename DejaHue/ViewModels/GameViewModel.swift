@@ -8,17 +8,9 @@
 
 import SwiftUI
 
-enum GameDifficulty: Int {
-    case easy = 0
-    case medium = 1
-    case hard = 2
-}
-
 class GameViewModel: ObservableObject {
-    @Published var columns = Array(repeating: GridItem(.flexible(minimum: 5), spacing: Config.spacing), count: Config.columns)
-    @Published var difficulty: GameDifficulty = .easy
     @Published var colors: [Color] = []
-    @Published var marks: [MarkType] = Array(repeating: .none, count: Config.cells)
+    @Published var marks: [MarkType] = Array(repeating: .none, count: Config.maxCellCount)
     
     @Published var health: Int = 3
     @Published var round: Int = 0
@@ -26,38 +18,63 @@ class GameViewModel: ObservableObject {
     @Published var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @Published var startDate = Date.now
     
+    private var gridSize: GridSize = .grid4x4
+    private var gameDifficulty: GameDifficulty = .medium
+    
     private var randomIndices = (0, 0)
     
     init() {
         generateColors()
     }
     
+    func setGameOptions(gameDifficulty: GameDifficulty = .medium, gridSize: GridSize = .grid4x4) {
+        guard (gameDifficulty != self.gameDifficulty) || (gridSize != self.gridSize) else {
+            return
+        }
+        self.gameDifficulty = gameDifficulty
+        self.gridSize = gridSize
+        restartRound(restartGame: true)
+    }
+    
+    func getColumns() -> [GridItem] {
+        return Array(
+            repeating: GridItem(
+                .flexible(minimum: 5),
+                spacing: Config.spacing
+            ),
+            count: gridSize.rawValue)
+    }
+    
+    func getCount() -> Int {
+        return gridSize.rawValue * gridSize.rawValue
+    }
+    
     func isCorrect(_ index: Int) -> Bool {
         colors.filter { $0 == colors[index] }.count > 1
     }
     
-    func generateColors(difficulty: GameDifficulty = .easy) {
+    func generateColors() {
         round += 1
         randomIndices = (0, 0)
-        marks = Array(repeating: .none, count: Config.cells)
+        marks = Array(repeating: .none, count: Config.maxCellCount)
         
         var colorSet = Set<Color>()
         let colorRange: ClosedRange<Double>
         
-        switch difficulty {
-        case .easy: colorRange = 0.1...0.9 // Wide range, very different colors
-        case .medium: colorRange = 0.2...0.8 // Medium range, more similar colors
-        case .hard: colorRange = 0.4...0.6 // Narrow range, very similar colors
+        switch gameDifficulty {
+        case .easy: colorRange = 0.1...0.9
+        case .medium: colorRange = 0.2...0.8
+        case .hard: colorRange = 0.4...0.6
         }
         
-        while colorSet.count < Config.cells {
+        while colorSet.count < getCount() {
             let tempColor = Color.random(in: colorRange)
             colorSet.insert(tempColor)
         }
         
         while randomIndices.0 == randomIndices.1 {
-            randomIndices.0 = .random(in: 0...Config.cells - 1)
-            randomIndices.1 = .random(in: 0...Config.cells - 1)
+            randomIndices.0 = .random(in: 0...getCount() - 1)
+            randomIndices.1 = .random(in: 0...getCount() - 1)
         }
         
         colors = Array(colorSet).shuffled()

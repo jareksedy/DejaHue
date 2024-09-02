@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GameView: View {
     @StateObject var viewModel = GameViewModel()
-    
+    @State private var preferencesPresented: Bool = false
     var body: some View {
         NavigationStack {
             VStack {
@@ -45,10 +45,10 @@ struct GameView: View {
                 ScoreView(round: viewModel.round, health: viewModel.health, startDate: viewModel.startDate)
 
                 LazyVGrid(
-                    columns: viewModel.columns,
+                    columns: viewModel.getColumns(),
                     spacing: Config.spacing
                 ) {
-                    ForEach(0...Config.cells - 1, id: \.self) { index in
+                    ForEach(0...viewModel.getCount() - 1, id: \.self) { index in
                         Button("") {
                             withAnimation(.bouncy(duration: 0.5)) {
                                 viewModel.handleUserInput(index)
@@ -63,13 +63,20 @@ struct GameView: View {
                     }
                 }
                 .padding(Config.padding)
-                .navigationTitle("Deja 🐠 Hue")
+                .navigationTitle("Deja Hue")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     Button {
+                        preferencesPresented.toggle()
                     } label: {
                         Image(systemName: "gearshape.fill")
                     }
+                }
+                .sheet(isPresented: $preferencesPresented) {
+                    StatsView()
+                        .presentationDetents([.fraction(0.95)])
+                        .presentationDragIndicator(.hidden)
+                        .presentationCornerRadius(Config.presentationCornerRadius)
                 }
             }
             .background(Color.appIndigoLight.ignoresSafeArea())

@@ -11,9 +11,8 @@ enum Config {
     static let padding: CGFloat = 20
     static let spacing: CGFloat = 2
     static let cornerRadius: CGFloat = 12
-    
-    static var columns: Int = 4
-    static var rows: Int = 4
-    static let cells: Int = columns * rows
+    static let presentationCornerRadius: CGFloat = 24
+
+    static let maxCellCount: Int = 25
 }
 
