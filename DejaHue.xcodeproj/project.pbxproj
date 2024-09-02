@@ -25,6 +25,7 @@
 		CA26293F2C85A8EE00DF12F4 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26293E2C85A8EE00DF12F4 /* GameViewModel.swift */; };
 		CA581EDF2C85C83600EEB598 /* GameDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA581EDE2C85C83600EEB598 /* GameDifficulty.swift */; };
 		CA581EE12C85C84600EEB598 /* GridSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA581EE02C85C84600EEB598 /* GridSize.swift */; };
+		CA66FDF62C85FF6D0049FD39 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66FDF52C85FF6D0049FD39 /* PreferencesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		CA26293E2C85A8EE00DF12F4 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		CA581EDE2C85C83600EEB598 /* GameDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDifficulty.swift; sourceTree = "<group>"; };
 		CA581EE02C85C84600EEB598 /* GridSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSize.swift; sourceTree = "<group>"; };
+		CA66FDF52C85FF6D0049FD39 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		CA2629262C85A6F400DF12F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CA66FDF52C85FF6D0049FD39 /* PreferencesView.swift */,
 				CA2629272C85A6FF00DF12F4 /* MainTabView */,
 				CA26292C2C85A75900DF12F4 /* GameView */,
 				CA26292F2C85A76F00DF12F4 /* StatsView */,
@@ -383,6 +386,7 @@
 				CA2629372C85A7E400DF12F4 /* Color+Extras.swift in Sources */,
 				CA26293A2C85A80400DF12F4 /* UIFont+Rounded.swift in Sources */,
 				CA2629312C85A78400DF12F4 /* Config.swift in Sources */,
+				CA66FDF62C85FF6D0049FD39 /* PreferencesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,7 @@ class GameViewModel: ObservableObject {
     private var gridSize: GridSize = .grid4x4
     private var gameDifficulty: GameDifficulty = .medium
     
-    private var randomIndices = (0, 0)
+    private var duplicateIndices: IndexSet = []
     
     init() {
         generateColors()
@@ -55,7 +55,7 @@ class GameViewModel: ObservableObject {
     
     func generateColors() {
         round += 1
-        randomIndices = (0, 0)
+        duplicateIndices = []
         marks = Array(repeating: .none, count: Config.maxCellCount)
         
         var colorSet = Set<Color>()
@@ -72,13 +72,15 @@ class GameViewModel: ObservableObject {
             colorSet.insert(tempColor)
         }
         
-        while randomIndices.0 == randomIndices.1 {
-            randomIndices.0 = .random(in: 0...getCount() - 1)
-            randomIndices.1 = .random(in: 0...getCount() - 1)
+        while duplicateIndices.count < 2 {
+            duplicateIndices.insert(.random(in: 0 ... getCount() - 1))
         }
         
         colors = Array(colorSet).shuffled()
-        colors[randomIndices.0] = colors[randomIndices.1]
+        
+        for index in duplicateIndices {
+            colors[index] = colors[duplicateIndices.first!]
+        }
     }
     
     func handleUserInput(_ index: Int) {
@@ -102,8 +104,9 @@ class GameViewModel: ObservableObject {
     }
     
     private func showCorrectColors() {
-        marks[randomIndices.0] = .checkmark
-        marks[randomIndices.1] = .checkmark
+        for index in duplicateIndices {
+            marks[index] = .checkmark
+        }
     }
     
     private func restartRound(restartGame: Bool = false) {

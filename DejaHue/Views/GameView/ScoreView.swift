@@ -27,7 +27,7 @@ struct ScoreView: View {
                     .font(.system(size: 18, weight: .bold))
                     .bold()
                     .fontDesign(.rounded)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(.appIndigo)
                     .transition(.push(from: .top))
                 
                 Text("\(round)")
@@ -46,7 +46,7 @@ struct ScoreView: View {
                 Image(systemName: "clock.fill")
                     .symbolEffect(.bounce, value: minutes)
                     .font(.system(size: 13))
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(.appIndigo)
                     .padding(.top, 0.5)
                     .padding(.trailing, 1.8)
                 
@@ -60,14 +60,14 @@ struct ScoreView: View {
                     .font(.system(size: 18, weight: .bold))
                     .bold()
                     .fontDesign(.rounded)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(.appIndigo)
             }.padding(.trailing, 10)
             
             HStack {
                 Image(systemName: "heart.fill")
                     .symbolEffect(.bounce, value: health)
                     .font(.system(size: 13))
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(.appIndigo)
                     .padding(.top, 0.5)
                 
                 Text("\(health)")
@@ -76,7 +76,7 @@ struct ScoreView: View {
                     .font(.system(size: 18, weight: .bold))
                     .bold()
                     .fontDesign(.rounded)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(.appIndigo)
                     .transition(.push(from: .top))
             }
             

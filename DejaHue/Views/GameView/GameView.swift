@@ -21,7 +21,13 @@ struct GameView: View {
                         .font(.system(size: 18, weight: .bold))
                         .bold()
                         .fontDesign(.rounded)
-                        .foregroundStyle(LinearGradient(colors: [.accentColor, .green], startPoint: .leading, endPoint: .trailing))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.appIndigo, .green],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                         .padding([.leading, .trailing], 25)
                         .padding([.top, .bottom], 25)
                     
@@ -34,13 +40,13 @@ struct GameView: View {
                     Image(systemName: "rhombus.fill")
                         .foregroundColor(.white)
                         .font(.system(size: 36))
-                        .offset(x: -50, y: 15)
+                        .offset(x: -51.5, y: 15)
                     , alignment: .bottomTrailing
                 )
                 
             
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 35)
                 
                 ScoreView(round: viewModel.round, health: viewModel.health, startDate: viewModel.startDate)
 
@@ -63,18 +69,22 @@ struct GameView: View {
                     }
                 }
                 .padding(Config.padding)
-                .navigationTitle("Deja Hue")
+                .navigationTitle("Deja 🐠 Hue")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
-                    Button {
-                        preferencesPresented.toggle()
-                    } label: {
+                    ToolbarItem(placement: .topBarTrailing) {
                         Image(systemName: "gearshape.fill")
+                            .foregroundColor(.accent)
+                            .font(.system(size: 16, weight: .bold, design: .rounded))
+                            .padding(.top, -0.5)
+                            .onTapGesture {
+                                preferencesPresented.toggle()
+                            }
                     }
                 }
                 .sheet(isPresented: $preferencesPresented) {
-                    StatsView()
-                        .presentationDetents([.fraction(0.95)])
+                    PreferencesView()
+                        .presentationDetents([.fraction(0.25)])
                         .presentationDragIndicator(.hidden)
                         .presentationCornerRadius(Config.presentationCornerRadius)
                 }
