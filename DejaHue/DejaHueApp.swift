@@ -11,7 +11,8 @@ import SwiftUI
 struct DejaHueApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
+                .preferredColorScheme(.light)
         }
     }
 }

@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		CA2628FB2C85A5C600DF12F4 /* DejaHueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2628FA2C85A5C600DF12F4 /* DejaHueApp.swift */; };
-		CA2628FD2C85A5C600DF12F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2628FC2C85A5C600DF12F4 /* ContentView.swift */; };
 		CA2628FF2C85A5C700DF12F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2628FE2C85A5C700DF12F4 /* Assets.xcassets */; };
 		CA2629022C85A5C700DF12F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2629012C85A5C700DF12F4 /* Preview Assets.xcassets */; };
 		CA26290C2C85A5C700DF12F4 /* DejaHueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26290B2C85A5C700DF12F4 /* DejaHueTests.swift */; };
 		CA2629162C85A5C700DF12F4 /* DejaHueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2629152C85A5C700DF12F4 /* DejaHueUITests.swift */; };
 		CA2629182C85A5C700DF12F4 /* DejaHueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2629172C85A5C700DF12F4 /* DejaHueUITestsLaunchTests.swift */; };
+		CA2629252C85A6EB00DF12F4 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2629242C85A6EB00DF12F4 /* MainTabView.swift */; };
+		CA2629292C85A71000DF12F4 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2629282C85A71000DF12F4 /* GameView.swift */; };
+		CA26292B2C85A73500DF12F4 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26292A2C85A73500DF12F4 /* ScoreView.swift */; };
+		CA26292E2C85A76300DF12F4 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26292D2C85A76300DF12F4 /* StatsView.swift */; };
+		CA2629312C85A78400DF12F4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2629302C85A78400DF12F4 /* Config.swift */; };
+		CA2629342C85A7A500DF12F4 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2629332C85A7A500DF12F4 /* Haptics.swift */; };
+		CA2629372C85A7E400DF12F4 /* Color+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2629362C85A7E400DF12F4 /* Color+Extras.swift */; };
+		CA26293A2C85A80400DF12F4 /* UIFont+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2629392C85A80400DF12F4 /* UIFont+Rounded.swift */; };
+		CA26293C2C85A81D00DF12F4 /* ColorButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26293B2C85A81D00DF12F4 /* ColorButtonStyle.swift */; };
+		CA26293F2C85A8EE00DF12F4 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26293E2C85A8EE00DF12F4 /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,6 @@
 /* Begin PBXFileReference section */
 		CA2628F72C85A5C600DF12F4 /* DejaHue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DejaHue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2628FA2C85A5C600DF12F4 /* DejaHueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejaHueApp.swift; sourceTree = "<group>"; };
-		CA2628FC2C85A5C600DF12F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA2628FE2C85A5C700DF12F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA2629012C85A5C700DF12F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA2629072C85A5C700DF12F4 /* DejaHueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DejaHueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +52,16 @@
 		CA2629112C85A5C700DF12F4 /* DejaHueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DejaHueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2629152C85A5C700DF12F4 /* DejaHueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejaHueUITests.swift; sourceTree = "<group>"; };
 		CA2629172C85A5C700DF12F4 /* DejaHueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejaHueUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA2629242C85A6EB00DF12F4 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		CA2629282C85A71000DF12F4 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		CA26292A2C85A73500DF12F4 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		CA26292D2C85A76300DF12F4 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		CA2629302C85A78400DF12F4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		CA2629332C85A7A500DF12F4 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		CA2629362C85A7E400DF12F4 /* Color+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extras.swift"; sourceTree = "<group>"; };
+		CA2629392C85A80400DF12F4 /* UIFont+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Rounded.swift"; sourceTree = "<group>"; };
+		CA26293B2C85A81D00DF12F4 /* ColorButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButtonStyle.swift; sourceTree = "<group>"; };
+		CA26293E2C85A8EE00DF12F4 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +113,12 @@
 			isa = PBXGroup;
 			children = (
 				CA2628FA2C85A5C600DF12F4 /* DejaHueApp.swift */,
-				CA2628FC2C85A5C600DF12F4 /* ContentView.swift */,
-				CA2628FE2C85A5C700DF12F4 /* Assets.xcassets */,
+				CA2629262C85A6F400DF12F4 /* Views */,
+				CA2629402C85A92200DF12F4 /* ViewModels */,
+				CA26293D2C85A82200DF12F4 /* Styles */,
+				CA2629352C85A7AD00DF12F4 /* Services */,
+				CA2629322C85A78A00DF12F4 /* Resources */,
+				CA2629382C85A7E900DF12F4 /* Extensions */,
 				CA2629002C85A5C700DF12F4 /* Preview Content */,
 			);
 			path = DejaHue;
@@ -125,6 +147,83 @@
 				CA2629172C85A5C700DF12F4 /* DejaHueUITestsLaunchTests.swift */,
 			);
 			path = DejaHueUITests;
+			sourceTree = "<group>";
+		};
+		CA2629262C85A6F400DF12F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA2629272C85A6FF00DF12F4 /* MainTabView */,
+				CA26292C2C85A75900DF12F4 /* GameView */,
+				CA26292F2C85A76F00DF12F4 /* StatsView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA2629272C85A6FF00DF12F4 /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				CA2629242C85A6EB00DF12F4 /* MainTabView.swift */,
+			);
+			path = MainTabView;
+			sourceTree = "<group>";
+		};
+		CA26292C2C85A75900DF12F4 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				CA2629282C85A71000DF12F4 /* GameView.swift */,
+				CA26292A2C85A73500DF12F4 /* ScoreView.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		CA26292F2C85A76F00DF12F4 /* StatsView */ = {
+			isa = PBXGroup;
+			children = (
+				CA26292D2C85A76300DF12F4 /* StatsView.swift */,
+			);
+			path = StatsView;
+			sourceTree = "<group>";
+		};
+		CA2629322C85A78A00DF12F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA2628FE2C85A5C700DF12F4 /* Assets.xcassets */,
+				CA2629302C85A78400DF12F4 /* Config.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA2629352C85A7AD00DF12F4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA2629332C85A7A500DF12F4 /* Haptics.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CA2629382C85A7E900DF12F4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA2629362C85A7E400DF12F4 /* Color+Extras.swift */,
+				CA2629392C85A80400DF12F4 /* UIFont+Rounded.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA26293D2C85A82200DF12F4 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				CA26293B2C85A81D00DF12F4 /* ColorButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		CA2629402C85A92200DF12F4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CA26293E2C85A8EE00DF12F4 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +356,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2628FD2C85A5C600DF12F4 /* ContentView.swift in Sources */,
+				CA2629342C85A7A500DF12F4 /* Haptics.swift in Sources */,
+				CA26293C2C85A81D00DF12F4 /* ColorButtonStyle.swift in Sources */,
+				CA26292B2C85A73500DF12F4 /* ScoreView.swift in Sources */,
+				CA26293F2C85A8EE00DF12F4 /* GameViewModel.swift in Sources */,
+				CA26292E2C85A76300DF12F4 /* StatsView.swift in Sources */,
 				CA2628FB2C85A5C600DF12F4 /* DejaHueApp.swift in Sources */,
+				CA2629292C85A71000DF12F4 /* GameView.swift in Sources */,
+				CA2629252C85A6EB00DF12F4 /* MainTabView.swift in Sources */,
+				CA2629372C85A7E400DF12F4 /* Color+Extras.swift in Sources */,
+				CA26293A2C85A80400DF12F4 /* UIFont+Rounded.swift in Sources */,
+				CA2629312C85A78400DF12F4 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,8 +536,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,9 +545,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jareksedy.DejaHue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,8 +567,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,9 +576,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jareksedy.DejaHue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
