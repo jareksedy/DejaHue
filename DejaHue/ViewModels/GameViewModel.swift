@@ -9,6 +9,8 @@
 import SwiftUI
 
 class GameViewModel: ObservableObject {
+    @Published var preferencesPresented: Bool = false
+    
     @Published var colors: [Color] = []
     @Published var marks: [MarkType] = Array(repeating: .none, count: Config.maxCellCount)
     
@@ -47,6 +49,10 @@ class GameViewModel: ObservableObject {
     
     func getCount() -> Int {
         return gridSize.rawValue * gridSize.rawValue
+    }
+    
+    func getGridSize() -> GridSize {
+        return gridSize
     }
     
     func isCorrect(_ index: Int) -> Bool {
@@ -118,6 +124,7 @@ class GameViewModel: ObservableObject {
                     self.health = 3
                     self.round = 1
                     self.startDate = Date.now
+                    self.preferencesPresented = false
                 }
             }
         }

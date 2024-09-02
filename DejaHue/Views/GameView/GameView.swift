@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct GameView: View {
-    @StateObject var viewModel = GameViewModel()
-    @State private var preferencesPresented: Bool = false
+    @ObservedObject var viewModel: GameViewModel
     var body: some View {
         NavigationStack {
             VStack {
@@ -46,7 +45,7 @@ struct GameView: View {
                 
             
                 Spacer()
-                    .frame(height: 35)
+                    .frame(height: 40)
                 
                 ScoreView(round: viewModel.round, health: viewModel.health, startDate: viewModel.startDate)
 
@@ -78,13 +77,13 @@ struct GameView: View {
                             .font(.system(size: 16, weight: .bold, design: .rounded))
                             .padding(.top, -0.5)
                             .onTapGesture {
-                                preferencesPresented.toggle()
+                                viewModel.preferencesPresented = true
                             }
                     }
                 }
-                .sheet(isPresented: $preferencesPresented) {
-                    PreferencesView()
-                        .presentationDetents([.fraction(0.25)])
+                .sheet(isPresented: $viewModel.preferencesPresented) {
+                    PreferencesView(viewModel: viewModel)
+                        .presentationDetents([.fraction(0.5)])
                         .presentationDragIndicator(.hidden)
                         .presentationCornerRadius(Config.presentationCornerRadius)
                 }

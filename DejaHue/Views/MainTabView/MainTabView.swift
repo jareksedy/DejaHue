@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainTabView: View {
     @State private var selection = 0
-    
+    private let viewModel = GameViewModel()
     init() {
         UINavigationBar
             .appearance()
@@ -35,7 +35,7 @@ struct MainTabView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            GameView()
+            GameView(viewModel: viewModel)
                 .tabItem {
                     selection == 0 ?
                     Image(systemName: "rectangle.grid.2x2.fill")

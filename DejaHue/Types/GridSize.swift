@@ -12,3 +12,13 @@ enum GridSize: Int {
     case grid4x4 = 4
     case grid5x5 = 5
 }
+
+extension GridSize {
+    var gridSizeString: String {
+        switch self {
+        case .grid3x3: return "3×3"
+        case .grid4x4: return "4×4"
+        case .grid5x5: return "5×5"
+        }
+    }
+}

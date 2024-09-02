@@ -37,7 +37,7 @@ struct ScoreView: View {
                     .font(.system(size: 18, weight: .bold))
                     .bold()
                     .fontDesign(.rounded)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(.appIndigo)
             }
             
             Spacer()
