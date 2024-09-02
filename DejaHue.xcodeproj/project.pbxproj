@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA2628FB2C85A5C600DF12F4 /* DejaHueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2628FA2C85A5C600DF12F4 /* DejaHueApp.swift */; };
+		CA2628FD2C85A5C600DF12F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2628FC2C85A5C600DF12F4 /* ContentView.swift */; };
+		CA2628FF2C85A5C700DF12F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2628FE2C85A5C700DF12F4 /* Assets.xcassets */; };
+		CA2629022C85A5C700DF12F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2629012C85A5C700DF12F4 /* Preview Assets.xcassets */; };
+		CA26290C2C85A5C700DF12F4 /* DejaHueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26290B2C85A5C700DF12F4 /* DejaHueTests.swift */; };
+		CA2629162C85A5C700DF12F4 /* DejaHueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2629152C85A5C700DF12F4 /* DejaHueUITests.swift */; };
+		CA2629182C85A5C700DF12F4 /* DejaHueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2629172C85A5C700DF12F4 /* DejaHueUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA2629082C85A5C700DF12F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2628EF2C85A5C600DF12F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA2628F62C85A5C600DF12F4;
+			remoteInfo = DejaHue;
+		};
+		CA2629122C85A5C700DF12F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2628EF2C85A5C600DF12F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA2628F62C85A5C600DF12F4;
+			remoteInfo = DejaHue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA2628F72C85A5C600DF12F4 /* DejaHue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DejaHue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2628FA2C85A5C600DF12F4 /* DejaHueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejaHueApp.swift; sourceTree = "<group>"; };
+		CA2628FC2C85A5C600DF12F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA2628FE2C85A5C700DF12F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA2629012C85A5C700DF12F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA2629072C85A5C700DF12F4 /* DejaHueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DejaHueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA26290B2C85A5C700DF12F4 /* DejaHueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejaHueTests.swift; sourceTree = "<group>"; };
+		CA2629112C85A5C700DF12F4 /* DejaHueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DejaHueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2629152C85A5C700DF12F4 /* DejaHueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejaHueUITests.swift; sourceTree = "<group>"; };
+		CA2629172C85A5C700DF12F4 /* DejaHueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejaHueUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA2628F42C85A5C600DF12F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2629042C85A5C700DF12F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA26290E2C85A5C700DF12F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA2628EE2C85A5C600DF12F4 = {
+			isa = PBXGroup;
+			children = (
+				CA2628F92C85A5C600DF12F4 /* DejaHue */,
+				CA26290A2C85A5C700DF12F4 /* DejaHueTests */,
+				CA2629142C85A5C700DF12F4 /* DejaHueUITests */,
+				CA2628F82C85A5C600DF12F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA2628F82C85A5C600DF12F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA2628F72C85A5C600DF12F4 /* DejaHue.app */,
+				CA2629072C85A5C700DF12F4 /* DejaHueTests.xctest */,
+				CA2629112C85A5C700DF12F4 /* DejaHueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA2628F92C85A5C600DF12F4 /* DejaHue */ = {
+			isa = PBXGroup;
+			children = (
+				CA2628FA2C85A5C600DF12F4 /* DejaHueApp.swift */,
+				CA2628FC2C85A5C600DF12F4 /* ContentView.swift */,
+				CA2628FE2C85A5C700DF12F4 /* Assets.xcassets */,
+				CA2629002C85A5C700DF12F4 /* Preview Content */,
+			);
+			path = DejaHue;
+			sourceTree = "<group>";
+		};
+		CA2629002C85A5C700DF12F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA2629012C85A5C700DF12F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA26290A2C85A5C700DF12F4 /* DejaHueTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA26290B2C85A5C700DF12F4 /* DejaHueTests.swift */,
+			);
+			path = DejaHueTests;
+			sourceTree = "<group>";
+		};
+		CA2629142C85A5C700DF12F4 /* DejaHueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA2629152C85A5C700DF12F4 /* DejaHueUITests.swift */,
+				CA2629172C85A5C700DF12F4 /* DejaHueUITestsLaunchTests.swift */,
+			);
+			path = DejaHueUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA2628F62C85A5C600DF12F4 /* DejaHue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA26291B2C85A5C700DF12F4 /* Build configuration list for PBXNativeTarget "DejaHue" */;
+			buildPhases = (
+				CA2628F32C85A5C600DF12F4 /* Sources */,
+				CA2628F42C85A5C600DF12F4 /* Frameworks */,
+				CA2628F52C85A5C600DF12F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DejaHue;
+			productName = DejaHue;
+			productReference = CA2628F72C85A5C600DF12F4 /* DejaHue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA2629062C85A5C700DF12F4 /* DejaHueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA26291E2C85A5C700DF12F4 /* Build configuration list for PBXNativeTarget "DejaHueTests" */;
+			buildPhases = (
+				CA2629032C85A5C700DF12F4 /* Sources */,
+				CA2629042C85A5C700DF12F4 /* Frameworks */,
+				CA2629052C85A5C700DF12F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA2629092C85A5C700DF12F4 /* PBXTargetDependency */,
+			);
+			name = DejaHueTests;
+			productName = DejaHueTests;
+			productReference = CA2629072C85A5C700DF12F4 /* DejaHueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA2629102C85A5C700DF12F4 /* DejaHueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2629212C85A5C700DF12F4 /* Build configuration list for PBXNativeTarget "DejaHueUITests" */;
+			buildPhases = (
+				CA26290D2C85A5C700DF12F4 /* Sources */,
+				CA26290E2C85A5C700DF12F4 /* Frameworks */,
+				CA26290F2C85A5C700DF12F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA2629132C85A5C700DF12F4 /* PBXTargetDependency */,
+			);
+			name = DejaHueUITests;
+			productName = DejaHueUITests;
+			productReference = CA2629112C85A5C700DF12F4 /* DejaHueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA2628EF2C85A5C600DF12F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CA2628F62C85A5C600DF12F4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CA2629062C85A5C700DF12F4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CA2628F62C85A5C600DF12F4;
+					};
+					CA2629102C85A5C700DF12F4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CA2628F62C85A5C600DF12F4;
+					};
+				};
+			};
+			buildConfigurationList = CA2628F22C85A5C600DF12F4 /* Build configuration list for PBXProject "DejaHue" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA2628EE2C85A5C600DF12F4;
+			productRefGroup = CA2628F82C85A5C600DF12F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA2628F62C85A5C600DF12F4 /* DejaHue */,
+				CA2629062C85A5C700DF12F4 /* DejaHueTests */,
+				CA2629102C85A5C700DF12F4 /* DejaHueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA2628F52C85A5C600DF12F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2629022C85A5C700DF12F4 /* Preview Assets.xcassets in Resources */,
+				CA2628FF2C85A5C700DF12F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2629052C85A5C700DF12F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA26290F2C85A5C700DF12F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA2628F32C85A5C600DF12F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2628FD2C85A5C600DF12F4 /* ContentView.swift in Sources */,
+				CA2628FB2C85A5C600DF12F4 /* DejaHueApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2629032C85A5C700DF12F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA26290C2C85A5C700DF12F4 /* DejaHueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA26290D2C85A5C700DF12F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2629162C85A5C700DF12F4 /* DejaHueUITests.swift in Sources */,
+				CA2629182C85A5C700DF12F4 /* DejaHueUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA2629092C85A5C700DF12F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA2628F62C85A5C600DF12F4 /* DejaHue */;
+			targetProxy = CA2629082C85A5C700DF12F4 /* PBXContainerItemProxy */;
+		};
+		CA2629132C85A5C700DF12F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA2628F62C85A5C600DF12F4 /* DejaHue */;
+			targetProxy = CA2629122C85A5C700DF12F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA2629192C85A5C700DF12F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA26291A2C85A5C700DF12F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA26291C2C85A5C700DF12F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DejaHue/Preview Content\"";
+				DEVELOPMENT_TEAM = 4NK62H99X6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jareksedy.DejaHue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA26291D2C85A5C700DF12F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DejaHue/Preview Content\"";
+				DEVELOPMENT_TEAM = 4NK62H99X6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jareksedy.DejaHue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA26291F2C85A5C700DF12F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NK62H99X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jareksedy.DejaHueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DejaHue.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DejaHue";
+			};
+			name = Debug;
+		};
+		CA2629202C85A5C700DF12F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NK62H99X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jareksedy.DejaHueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DejaHue.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DejaHue";
+			};
+			name = Release;
+		};
+		CA2629222C85A5C700DF12F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NK62H99X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jareksedy.DejaHueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DejaHue;
+			};
+			name = Debug;
+		};
+		CA2629232C85A5C700DF12F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NK62H99X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jareksedy.DejaHueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DejaHue;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA2628F22C85A5C600DF12F4 /* Build configuration list for PBXProject "DejaHue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2629192C85A5C700DF12F4 /* Debug */,
+				CA26291A2C85A5C700DF12F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA26291B2C85A5C700DF12F4 /* Build configuration list for PBXNativeTarget "DejaHue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA26291C2C85A5C700DF12F4 /* Debug */,
+				CA26291D2C85A5C700DF12F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA26291E2C85A5C700DF12F4 /* Build configuration list for PBXNativeTarget "DejaHueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA26291F2C85A5C700DF12F4 /* Debug */,
+				CA2629202C85A5C700DF12F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2629212C85A5C700DF12F4 /* Build configuration list for PBXNativeTarget "DejaHueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2629222C85A5C700DF12F4 /* Debug */,
+				CA2629232C85A5C700DF12F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA2628EF2C85A5C600DF12F4 /* Project object */;
+}
